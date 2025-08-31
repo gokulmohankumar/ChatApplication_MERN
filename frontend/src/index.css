@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100dvh;
+  overflow: hidden; /* keep it */
+  display: flex;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* Optional: just to be safe */
+}
+
+/* To show scrollbar on hover */
+.scrollable-content::-webkit-scrollbar {
+  width: 8px; /* Or any desired width */
+}
